@@ -1,12 +1,17 @@
 import LoginForm from "@/components/LoginForm/LoginForm";
-import { useRouter } from "next/router";
+import NoirImage from "@/components/NoirImage/NoirImage";
+import { Container } from "@mui/system";
+//import { useRouter } from "next/router";
 import React from "react";
 
 const index = () => {
   return (
     <>
       <h1>Login</h1>
-      <LoginForm />
+      <Container>
+        <NoirImage />
+        <LoginForm />
+      </Container>
     </>
   );
 };
