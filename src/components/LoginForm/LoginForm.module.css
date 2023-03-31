@@ -1,4 +1,11 @@
 .loginContainer {
     display: flex;
     flex-direction: column;
+    max-width: 32%;
+    height: auto;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
