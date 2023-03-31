@@ -7,8 +7,7 @@ import React from "react";
 const index = () => {
   return (
     <>
-      <h1>Login</h1>
-      <Container>
+      <Container className="loginPage">
         <NoirImage />
         <LoginForm />
       </Container>
