@@ -1,5 +1,11 @@
 .loginPage {
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 150%;
+    height: 60rem;
+    background: linear-gradient(166.7deg, rgba(9, 109, 202, 0.03)-0.68%, rgba(255, 255, 255, 0.024) 40%, rgba(9, 109, 202, 0.24) 100%);
+
 }
