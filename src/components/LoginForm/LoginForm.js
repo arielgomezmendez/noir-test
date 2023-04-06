@@ -27,7 +27,11 @@ const LoginForm = () => {
             className={styles.input}
           />
           <h3>¿Olvidaste tu contraseña?</h3>
-          <Button variant="contained" disableElevation>
+          <Button
+            variant="contained"
+            disableElevation
+            className={styles.button}
+          >
             Iniciar seción
           </Button>
         </form>

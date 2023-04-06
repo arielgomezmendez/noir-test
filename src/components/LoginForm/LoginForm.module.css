@@ -1,8 +1,8 @@
 .loginContainer {
     display: flex;
     flex-direction: column;
-    min-width: 40.2rem;
-    height: 44rem;
+    min-width: 47.2rem;
+    height: 56rem;
     background-color: #FFFFFF;
     align-items: center;
     z-index: 1;
@@ -12,6 +12,7 @@
     box-shadow: 0px 8px 20px rgba(9, 109, 202, 0.08);
 }
 
+/*h2 Bienvenido a Notir*/
 .loginContainer h2 {
     font-family: 'Nunito';
     font-weight: 700;
@@ -19,16 +20,20 @@
     line-height: 100%;
     letter-spacing: 0.01em;
     color: #12518C;
+    margin-top: 8.6rem;
 }
 
+/*span Acceda a su cuenta*/
 .loginContainer span {
     font-family: 'Nunito';
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 100%;
     color: #636363;
+    margin-top: 0.4rem;
 }
 
+/*h4 Usuario o coreo electronico*/
 .loginContainer h4 {
     font-family: 'Nunito';
     font-style: normal;
@@ -36,21 +41,35 @@
     font-size: 1.4rem;
     line-height: 100%;
     color: #1A1A1A;
+    margin-top: 4rem;
 }
 
+/*input*/
+.input {
+    width: 34.4rem;
+    height: 4.8rem;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    margin-top: 0.4rem;
+
+}
+
+/*h3 Olvidaste tu contrasenna*/
 .loginContainer h3 {
     font-family: 'Nunito';
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
     color: #096DCA;
+    margin-top: 4rem;
 }
 
-.input {
-    width: 30rem;
+/*buttn iniciar sesion*/
+.button {
+    width: 34.4rem;
     height: 4.8rem;
-    background: #FFFFFF;
-    border: 1px solid #E6E6E6;
+    background: #CCCCCC;
     border-radius: 4px;
-
+    margin-top: 4rem;
 }
