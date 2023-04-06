@@ -13,9 +13,19 @@ const LoginForm = () => {
 
         <form>
           <h4>Usuario o correo electrónico</h4>
-          <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+          <TextField
+            id="outlined-basic"
+            label="Outlined"
+            variant="outlined"
+            className={styles.input}
+          />
           <h4>Contraseña</h4>
-          <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+          <TextField
+            id="outlined-basic"
+            label="Outlined"
+            variant="outlined"
+            className={styles.input}
+          />
           <h3>¿Olvidaste tu contraseña?</h3>
           <Button variant="contained" disableElevation>
             Iniciar seción
