@@ -13,8 +13,8 @@ const index = () => {
           className={styles.star1}
           src="/Looper-2-1.png"
           alt="Looper 1"
-          width={400}
-          height={400}
+          width={500}
+          height={500}
         />
         <NoirImage />
         <LoginForm />
@@ -22,8 +22,8 @@ const index = () => {
           className={styles.star2}
           src="/Looper2.png"
           alt="Looper 1"
-          width={400}
-          height={400}
+          width={500}
+          height={500}
         />
       </Container>
     </div>
