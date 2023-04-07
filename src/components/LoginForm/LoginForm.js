@@ -15,14 +15,14 @@ const LoginForm = () => {
           <h4>Usuario o correo electrónico</h4>
           <TextField
             id="outlined-basic"
-            label="Outlined"
+            label="ejemplo@email.com"
             variant="outlined"
             className={styles.input}
           />
           <h4>Contraseña</h4>
           <TextField
             id="outlined-basic"
-            label="Outlined"
+            label="Introduce tu contraseña"
             variant="outlined"
             className={styles.input}
           />
