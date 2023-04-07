@@ -14,7 +14,6 @@
 
 /*h2 Bienvenido a Notir*/
 .loginContainer h2 {
-    font-family: 'Nunito';
     font-weight: 700;
     font-size: 2rem;
     line-height: 100%;
@@ -25,7 +24,7 @@
 
 /*span Acceda a su cuenta*/
 .loginContainer span {
-    font-family: 'Nunito';
+
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 100%;
@@ -35,7 +34,7 @@
 
 /*h4 Usuario o coreo electronico*/
 .loginContainer h4 {
-    font-family: 'Nunito';
+
     font-style: normal;
     font-weight: 700;
     font-size: 1.4rem;
@@ -57,7 +56,7 @@
 
 /*h3 Olvidaste tu contrasenna*/
 .loginContainer h3 {
-    font-family: 'Nunito';
+
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
