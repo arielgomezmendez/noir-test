@@ -23,6 +23,10 @@ const LoginForm = () => {
     event.preventDefault();
   };
 
+  /*States to able and disable the button */
+  const [pasword, setPasword] = useState("");
+  const [user, setUser] = useState("");
+
   return (
     <>
       <Container className={styles.loginContainer}>
