@@ -22,6 +22,7 @@ const LoginForm = () => {
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
+
   return (
     <>
       <Container className={styles.loginContainer}>
@@ -63,14 +64,9 @@ const LoginForm = () => {
               label="Password"
             />
           </FormControl>
-
           <h3>¿Olvidaste tu contraseña?</h3>
-          <Button
-            variant="contained"
-            disableElevation
-            className={styles.button}
-          >
-            Iniciar seción
+          <Button variant="contained" disabled className={styles.button}>
+            Iniciar sesión
           </Button>
         </form>
       </Container>
@@ -79,16 +75,3 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
-
-{
-  /*
-<TextField
-            id="outlined-basic"
-            label="Introduce tu contraseña"
-            variant="outlined"
-            className={styles.input}
-            type="pasword"
-          />
-
-*/
-}
