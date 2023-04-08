@@ -50,6 +50,7 @@ const LoginForm = () => {
                 /* InputAdornment componet from MUI to create a button sho show and hide the password */
                 <InputAdornment position="end">
                   <IconButton
+                    className={styles.eye}
                     aria-label="toggle password visibility"
                     onClick={handleClickShowPassword}
                     onMouseDown={handleMouseDownPassword}

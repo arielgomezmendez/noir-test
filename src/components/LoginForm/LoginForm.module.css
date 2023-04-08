@@ -52,6 +52,10 @@
     margin-top: 0.4rem;
 }
 
+.eye {
+    color: #096DCA;
+}
+
 /*h3 Olvidaste tu contraseña*/
 .loginContainer h3 {
     font-weight: 700;
