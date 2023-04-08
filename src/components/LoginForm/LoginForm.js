@@ -25,7 +25,7 @@ const LoginForm = () => {
 
   /*States to able and disable the button */
   const [pasword, setPasword] = useState("");
-  const [user, setUser] = useState("");
+  const [userName, setUserName] = useState("");
 
   return (
     <>
