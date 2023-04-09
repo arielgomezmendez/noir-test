@@ -12,7 +12,7 @@ import React from "react";
 //Import CSS how CSS componet level, to apply the styles just to LoginForm component using CSS modules
 import styles from "./LoginForm.module.css";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -23,9 +23,23 @@ const LoginForm = () => {
     event.preventDefault();
   };
 
-  /*States to able and disable the button */
-  const [pasword, setPasword] = useState("");
+  //States to able and disable the button
   const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+
+  //Get the user name
+  const handleUserName = (event) => {
+    if (event && event.target) {
+      setUserName(event.target.value);
+      console.log(userName);
+    }
+  };
+  //Get the password
+  const handlePassword = (event) => {
+    if (event && event.target) {
+      setPassword(event.target.value);
+    }
+  };
 
   return (
     <>
@@ -40,15 +54,21 @@ const LoginForm = () => {
             label="ejemplo@email.com"
             variant="outlined"
             className={styles.input}
+            onChange={handleUserName}
           />
           <h4>Contraseña</h4>
           {/* FormControl componet from MUI for create a password field and a button show and hide the password */}
-          <FormControl className={styles.input} variant="outlined">
+          <FormControl
+            className={styles.input}
+            variant="outlined"
+            onClick={(event) => setPassword(event.target.value)}
+          >
             <InputLabel htmlFor="outlined-adornment-password">
               Introduce la contraseña
             </InputLabel>
             {/* OutlinedInput componet from MUI to create a field of passowrd */}
             <OutlinedInput
+              onChange={handlePassword}
               id="outlined-adornment-password"
               type={showPassword ? "text" : "password"}
               endAdornment={
@@ -69,7 +89,11 @@ const LoginForm = () => {
             />
           </FormControl>
           <h3>¿Olvidaste tu contraseña?</h3>
-          <Button variant="contained" disabled className={styles.button}>
+          <Button
+            variant="contained"
+            disabled={false}
+            className={styles.button}
+          >
             Iniciar sesión
           </Button>
         </form>
