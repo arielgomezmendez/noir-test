@@ -12,7 +12,7 @@ import React from "react";
 //Import CSS how CSS componet level, to apply the styles just to LoginForm component using CSS modules
 import styles from "./LoginForm.module.css";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -91,7 +91,8 @@ const LoginForm = () => {
           <h3>¿Olvidaste tu contraseña?</h3>
           <Button
             variant="contained"
-            disabled={false}
+            // able the login button when the input values are not empty
+            disabled={userName && password ? false : true}
             className={styles.button}
           >
             Iniciar sesión
