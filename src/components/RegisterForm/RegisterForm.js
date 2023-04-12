@@ -2,11 +2,12 @@ import { Button, TextField, InputAdornment } from "@mui/material";
 import React from "react";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
+import styles from "./RegisterForm.module.css";
 
 const RegisterForm = () => {
   return (
-    <div>
-      <form>
+    <>
+      <form className={styles.registerForm}>
         <h1>Regístrate</h1>
 
         <h4>Primer nombre</h4>
@@ -65,7 +66,7 @@ const RegisterForm = () => {
           <br /> condiciones y la Política de Privacidad de Notir.
         </p>
       </form>
-    </div>
+    </>
   );
 };
 
