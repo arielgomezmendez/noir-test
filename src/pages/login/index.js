@@ -1,5 +1,5 @@
 import LoginForm from "@/components/LoginForm/LoginForm";
-import NoirImage from "@/components/NoirImage/NoirImage";
+import NotirImage from "@/components/NotirImage/NotirImage";
 import { Container } from "@mui/system";
 import Image from "next/image";
 import React from "react";
@@ -16,7 +16,7 @@ const index = () => {
           width={500}
           height={500}
         />
-        <NoirImage />
+        <NotirImage />
         <LoginForm />
         <Image
           className={styles.star2}
