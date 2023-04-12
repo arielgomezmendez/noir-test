@@ -16,7 +16,7 @@ const index = () => {
           width={500}
           height={500}
         />
-        <NotirImage />
+        <NotirImage className={styles.notirImageLogin} />
         <LoginForm />
         <Image
           className={styles.star2}

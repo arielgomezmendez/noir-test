@@ -1,12 +1,14 @@
 import React from "react";
-import styles from "./styles.module.css";
+//import styles from "./styles.module.css";
 
-const NotirImage = () => {
+const NotirImage = ({ className }) => {
   return (
     <>
-      <img src="/Bienvenido.png" className={styles.noirImage} />
+      <img src="/Bienvenido.png" className={`${className}`} />
     </>
   );
 };
 
 export default NotirImage;
+
+/*className={styles.noirImage} */
