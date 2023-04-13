@@ -44,6 +44,13 @@
     margin-top: 5rem;
 }
 
-/*
-
-*/
+.registerForm p {
+    width: 30rem;
+    height: 4.2rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 120%;
+    text-align: center;
+    color: #333333;
+    margin-top: 5rem;
+}
