@@ -5,6 +5,8 @@
     width: 60rem;
     height: 76.8rem;
     background: #FFFFFF;
+    position: relative;
+    left: 2.4rem;
 }
 
 .input {
