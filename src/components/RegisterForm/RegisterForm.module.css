@@ -1,10 +1,10 @@
 .registerForm {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 60rem;
     height: 76.8rem;
     background: #FFFFFF;
-    margin: 0;
 }
 
 .input {
@@ -12,9 +12,36 @@
     border-radius: 4px;
 }
 
+.registerForm h1 {
+    width: 30rem;
+    height: 5.8rem;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 120%;
+    text-align: center;
+    color: #12518C;
+    margin-bottom: 3rem;
+}
+
+.registerForm h4 {
+    width: 300px;
+    height: 17px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    color: #333333;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
 .button {
     width: 30rem;
     height: 3.3rem;
     background: #12518C;
     border-radius: 5px;
+    margin-top: 5rem;
 }
+
+/*
+
+*/
