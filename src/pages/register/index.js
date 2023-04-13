@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 const index = () => {
   return (
     <div>
-      <Container>
+      <Container className={styles.registerPage}>
         <NoirImage className={styles.notirImageRegister} />
         <RegisterForm />
       </Container>

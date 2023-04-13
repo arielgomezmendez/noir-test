@@ -15,6 +15,7 @@ const RegisterForm = () => {
           id="outlined-basic"
           placeholder="PlaceHolder"
           variant="outlined"
+          className={styles.input}
         />
 
         <h4>Segundo nombre</h4>
@@ -22,10 +23,12 @@ const RegisterForm = () => {
           id="outlined-basic"
           placeholder="PlaceHolder"
           variant="outlined"
+          className={styles.input}
         />
 
         <h4>Correo electrónico</h4>
         <TextField
+          className={styles.input}
           placeholder="PlaceHolder"
           id="outlined-start-adornment"
           InputProps={{
@@ -39,6 +42,7 @@ const RegisterForm = () => {
 
         <h4>Número de teléfono</h4>
         <TextField
+          className={styles.input}
           placeholder="+1 768 482 6489 4556"
           id="outlined-start-adornment"
           InputProps={{
@@ -52,12 +56,15 @@ const RegisterForm = () => {
 
         <h4>Nombre de la agencia</h4>
         <TextField
+          className={styles.input}
           id="outlined-basic"
           placeholder="PlaceHolder"
           variant="outlined"
         />
 
-        <Button variant="contained">Continuar</Button>
+        <Button variant="contained" className={styles.button}>
+          Continuar
+        </Button>
 
         <p>
           Al hacer clic en "Continuar" arriba, usted reconoce
