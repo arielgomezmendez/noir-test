@@ -19,12 +19,31 @@
     margin-bottom: 5rem;
 }
 
-.activation p {}
+.p1 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #121212;
+    align-self: stretch;
+    margin-bottom: 1rem;
+}
+
+.p2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #828282;
+
+}
 
 .input {
     width: 5.6rem;
     height: 5.6rem;
-    margin: 2rem;
+    margin-left: 2rem;
     background: #FFFFFF;
     border: 1.5px solid #096DCA;
     border-radius: 9px;
@@ -36,9 +55,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
 }
-
-
 
 .button {
     align-items: center;
@@ -46,4 +64,5 @@
     height: 3.3rem;
     background: #12518C;
     border-radius: 5px;
+    margin-top: 5rem;
 }
