@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 60rem;
     height: 76.8rem;
     background: #FFFFFF;
@@ -10,8 +9,41 @@
     left: 5.48rem;
 }
 
+.activation h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 100%;
+    text-align: center;
+    color: #12518C;
+    margin-top: 22rem;
+    margin-bottom: 5rem;
+}
+
+.activation p {}
+
 .input {
     width: 5.6rem;
     height: 5.6rem;
     margin: 2rem;
+    background: #FFFFFF;
+    border: 1.5px solid #096DCA;
+    border-radius: 9px;
+    isolation: isolate;
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.button {
+    align-items: center;
+    width: 15rem;
+    height: 3.3rem;
+    background: #12518C;
+    border-radius: 5px;
 }

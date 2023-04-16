@@ -7,15 +7,17 @@ const Activation = () => {
     <>
       <Container className={styles.activation}>
         <h1>Activacion</h1>
-        <Container>
+        <p>Hemos enviado un código de activación a:</p>
+        <p>correo@correo.com</p>
+        <Container className={styles.inputsContainer}>
           <TextField className={styles.input} />
           <TextField className={styles.input} />
           <TextField className={styles.input} />
           <TextField className={styles.input} />
         </Container>
-        <p>Hemos enviado un código de activación a:</p>
-        <p>correo@correo.com</p>
-        <Button variant="contained">Verificar</Button>
+        <Button variant="contained" className={styles.button}>
+          Verificar
+        </Button>
       </Container>
     </>
   );
