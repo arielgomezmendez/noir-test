@@ -3,8 +3,10 @@ import React from "react";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
 import styles from "./RegisterForm.module.css";
+//import { useState } from "react";
+import Activation from "../Activation/Activation";
 
-const RegisterForm = () => {
+const RegisterForm = ({ step, setStep }) => {
   return (
     <>
       <form className={styles.registerForm}>
@@ -62,7 +64,11 @@ const RegisterForm = () => {
           variant="outlined"
         />
 
-        <Button variant="contained" className={styles.button}>
+        <Button
+          variant="contained"
+          className={styles.button}
+          onClick={() => setStep(2)}
+        >
           Continuar
         </Button>
 
