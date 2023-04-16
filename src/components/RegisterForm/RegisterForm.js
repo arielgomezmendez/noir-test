@@ -6,7 +6,7 @@ import styles from "./RegisterForm.module.css";
 //import { useState } from "react";
 import Activation from "../Activation/Activation";
 
-const RegisterForm = ({ step, setStep }) => {
+const RegisterForm = ({ setStep }) => {
   return (
     <>
       <form className={styles.registerForm}>

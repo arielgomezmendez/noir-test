@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Activation.module.css";
 import { Button, Container, TextField } from "@mui/material";
 
-const Activation = () => {
+const Activation = ({ setStep }) => {
   return (
     <>
       <Container className={styles.activation}>
@@ -15,7 +15,11 @@ const Activation = () => {
           <TextField className={styles.input} />
           <TextField className={styles.input} />
         </Container>
-        <Button variant="contained" className={styles.button}>
+        <Button
+          variant="contained"
+          className={styles.button}
+          onClick={() => setStep(3)}
+        >
           Verificar
         </Button>
       </Container>
