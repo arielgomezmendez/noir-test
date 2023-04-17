@@ -15,9 +15,14 @@
     width: 100%;
 }
 
+/*Left side of the page*/
 .leftSide {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    min-width: 47.2rem;
+    height: 56rem;
 }
 
 .leftSide h1 {
@@ -30,20 +35,13 @@
 }
 
 .notirImageLogin {
-    /*width: 78rem;
-    height: 60rem;
-    z-index: 0;
-    position: relative;
-    right: 6rem;
-    margin-top: 10rem;*/
+    width: 48rem;
+    height: 50rem;
 }
 
 .star1 {
     position: relative;
     z-index: 0;
-    bottom: -1rem;
-    left: 44rem;
-
 }
 
 .star2 {
