@@ -45,6 +45,7 @@ const Finish = ({ setStep }) => {
                     onClick={handleClickShowPassword}
                     onMouseDown={handleMouseDownPassword}
                     edge="end"
+                    className={styles.eye}
                   >
                     {showPassword ? <VisibilityOff /> : <Visibility />}
                   </IconButton>
@@ -69,6 +70,7 @@ const Finish = ({ setStep }) => {
                     onClick={handleClickShowPassword}
                     onMouseDown={handleMouseDownPassword}
                     edge="end"
+                    className={styles.eye}
                   >
                     {showPassword ? <VisibilityOff /> : <Visibility />}
                   </IconButton>
