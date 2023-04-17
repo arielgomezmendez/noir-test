@@ -1,5 +1,6 @@
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import {
+  Button,
   Container,
   FormControl,
   IconButton,
@@ -76,6 +77,9 @@ const Finish = ({ setStep }) => {
               label="Password"
             />
           </FormControl>
+          <Button variant="contained" className={styles.button}>
+            Confirmar
+          </Button>
         </form>
       </Container>
     </>
