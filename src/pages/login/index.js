@@ -10,7 +10,7 @@ const index = () => {
     <div className={styles.loginPageContainer}>
       <Container className={styles.loginPage}>
         {/*Left  side of the page*/}
-        <Container className={styles.left}>
+        <Container className={styles.leftSide}>
           <Image
             className={styles.star1}
             src="/Looper-2-1.png"
@@ -24,7 +24,7 @@ const index = () => {
         </Container>
 
         {/*Riht  side of the page*/}
-        <Container className={styles.right}>
+        <Container className={styles.rightSide}>
           <LoginForm />
           <Image
             className={styles.star2}
