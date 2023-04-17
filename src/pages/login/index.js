@@ -9,6 +9,8 @@ const index = () => {
   return (
     <div className={styles.loginPageContainer}>
       <Container className={styles.loginPage}>
+        <h1>Bienvenido a </h1>
+        <Image src="/Notir.png" width={500} height={500} alt="Notir" />
         <Image
           className={styles.star1}
           src="/Looper-2-1.png"
