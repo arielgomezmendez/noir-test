@@ -9,8 +9,10 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useState } from "react";
+import styles from "./Finish.module.css";
 
 const Finish = ({ setStep }) => {
+  //State to show and hide the passwords
   const [showPassword, setShowPassword] = React.useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -20,15 +22,19 @@ const Finish = ({ setStep }) => {
   };
   return (
     <>
-      <Container>
-        <h1> Estamos terminando</h1>
+      <Container className={styles.finish}>
+        <h1>
+          {" "}
+          Estamos <br /> terminando
+        </h1>
         <form>
           <h4>Contraseña</h4>
-          <FormControl sx={{ m: 1, width: "25ch" }} variant="outlined">
+          <FormControl variant="outlined">
             <InputLabel htmlFor="outlined-adornment-password">
               Password
             </InputLabel>
             <OutlinedInput
+              className={styles.input}
               id="outlined-adornment-password"
               type={showPassword ? "text" : "password"}
               endAdornment={
@@ -47,11 +53,12 @@ const Finish = ({ setStep }) => {
             />
           </FormControl>
           <h4>Confirmar contraseña</h4>
-          <FormControl sx={{ m: 1, width: "25ch" }} variant="outlined">
+          <FormControl variant="outlined">
             <InputLabel htmlFor="outlined-adornment-password">
               Password
             </InputLabel>
             <OutlinedInput
+              className={styles.input}
               id="outlined-adornment-password"
               type={showPassword ? "text" : "password"}
               endAdornment={
