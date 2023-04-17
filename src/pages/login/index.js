@@ -19,7 +19,7 @@ const index = () => {
             height={500}
           />
           <h1>Bienvenido a </h1>
-          <Image src="/Notir.png" width={500} height={500} alt="Notir" />
+          <Image src="/Notir.png" width={180} height={180} alt="Notir" />
           <NotirImage className={styles.notirImageLogin} />
         </Container>
 
