@@ -13,6 +13,7 @@ import React from "react";
 import styles from "./LoginForm.module.css";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { useState } from "react";
+import Link from "next/link";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -94,6 +95,7 @@ const LoginForm = () => {
             // able the login button when the input values are not empty
             disabled={userName && password ? false : true}
             className={styles.button}
+            href="/register"
           >
             Iniciar sesión
           </Button>
