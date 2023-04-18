@@ -1,20 +1,15 @@
 .loginPageContainer {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(116.7deg, rgba(9, 109, 202, 0.03) -0.68%, rgba(255, 255, 255, 0.005625) 26.59%, rgba(255, 255, 255, 0) 49.66%, rgba(255, 255, 255, 0.269) 66.97%, rgba(9, 109, 202, 0.274) 100%);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-/*Page of login*/
-.loginPage {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
     height: 100vh;
+    /*background: linear-gradient(116.7deg, rgba(9, 109, 202, 0.03) -0.68%, rgba(255, 255, 255, 0.005625) 26.59%, rgba(255, 255, 255, 0) 49.66%, rgba(255, 255, 255, 0.269) 66.97%, rgba(9, 109, 202, 0.274) 100%);*/
+    background-color: aqua;
+    display: flex;
+
 }
+
 
 /*Left side of the page*/
 .leftSide {
@@ -22,7 +17,10 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    min-width: 48.2rem;
+    width: 50%;
+    height: 100vh;
+    background-color: green;
+
 
 }
 
@@ -31,6 +29,7 @@
     z-index: 0;
     top: 0.4rem;
     right: 8rem;
+    background-color: red;
 }
 
 .leftSide h1 {
@@ -60,9 +59,22 @@
     right: 10rem;
 }
 
+/*Right side of the page*/
+
+.rightSide {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+
+}
+
 .star2 {
+    background-color: red;
     position: relative;
-    top: 26rem;
-    right: 44rem;
+    top: -50rem;
+    left: 10.7rem;
     z-index: 0;
+
 }
