@@ -1,6 +1,6 @@
 .loginPageContainer {
     width: 100%;
-    height: 76.8rem;
+    height: 100vh;
     background: linear-gradient(116.7deg, rgba(9, 109, 202, 0.03) -0.68%, rgba(255, 255, 255, 0.005625) 26.59%, rgba(255, 255, 255, 0) 49.66%, rgba(255, 255, 255, 0.269) 66.97%, rgba(9, 109, 202, 0.274) 100%);
     display: flex;
     justify-content: center;
@@ -13,6 +13,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+    height: 100vh;
 }
 
 /*Left side of the page*/
