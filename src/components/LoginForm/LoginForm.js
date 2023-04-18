@@ -14,6 +14,7 @@ import styles from "./LoginForm.module.css";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -41,6 +42,8 @@ const LoginForm = () => {
       setPassword(event.target.value);
     }
   };
+
+  const route = useRouter();
 
   return (
     <>
@@ -95,7 +98,9 @@ const LoginForm = () => {
             // able the login button when the input values are not empty
             disabled={userName && password ? false : true}
             className={styles.button}
-            href="/register"
+            onClick={() => {
+              route.push("/");
+            }}
           >
             Iniciar sesión
           </Button>
