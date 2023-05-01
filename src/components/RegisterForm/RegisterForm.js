@@ -3,10 +3,17 @@ import React from "react";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
 import styles from "./RegisterForm.module.css";
-//import { useState } from "react";
-import Activation from "../Activation/Activation";
+import * as Yup from "yup";
 
 const RegisterForm = ({ setStep }) => {
+  const registrationSchema = Yup.object().shape({
+    firstName: Yup.string().required(),
+    secondName: Yup.string().required(),
+    email: Yup.string().email().required(),
+    phoneNumber: Yup.string().required(),
+    agencyName: Yup.string().required(),
+  });
+
   return (
     <>
       <form className={styles.registerForm}>
