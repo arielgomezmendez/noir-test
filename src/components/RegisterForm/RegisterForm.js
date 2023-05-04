@@ -1,5 +1,5 @@
 import { Button, TextField, InputAdornment } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
 import styles from "./RegisterForm.module.css";
@@ -14,6 +14,18 @@ const RegisterForm = ({ setStep }) => {
     phoneNumber: Yup.string().required(),
     agencyName: Yup.string().required(),
   });
+
+  // local state for form values and validation errors
+  //formValues is an object containing the values of the form fields.
+  const [formValues, setFormValues] = useState({
+    firstName: "",
+    secondName: "",
+    email: "",
+    phoneNumber: "",
+    agencyName: "",
+  });
+  //formErrors is an object containing the validation errors corresponding to each field.
+  const [formErrors, setFormErrors] = useState({});
 
   return (
     <>
