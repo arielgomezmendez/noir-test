@@ -3,9 +3,10 @@ import React from "react";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
 import styles from "./RegisterForm.module.css";
-import * as Yup from "yup";
+import * as Yup from "yup"; // import library to validate form
 
 const RegisterForm = ({ setStep }) => {
+  //create the validation schema
   const registrationSchema = Yup.object().shape({
     firstName: Yup.string().required(),
     secondName: Yup.string().required(),
