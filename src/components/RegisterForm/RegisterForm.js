@@ -30,8 +30,8 @@ const RegisterForm = ({ setStep }) => {
   // function used as an event handler to update the formValues state when a user enters or changes the values of the form fields.
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    // el estado se actualiza realizando una copia del objeto formValues usando el operador de tres puntos para crear
-    // un nuevo objeto con la propiedad que se esta actualizando.
+    // this state is updated making a copy of formValues object
+    // using the three points operators to create a new object with the updated property
     setFormValues({
       ...formValues,
       [name]: value,
