@@ -27,6 +27,17 @@ const RegisterForm = ({ setStep }) => {
   //formErrors is an object containing the validation errors corresponding to each field.
   const [formErrors, setFormErrors] = useState({});
 
+  // function used as an event handler to update the formValues state when a user enters or changes the values of the form fields.
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    // el estado se actualiza realizando una copia del objeto formValues usando el operador de tres puntos para crear
+    // un nuevo objeto con la propiedad que se esta actualizando.
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
   return (
     <>
       <form className={styles.registerForm}>
