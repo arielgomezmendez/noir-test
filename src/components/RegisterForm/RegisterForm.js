@@ -38,6 +38,26 @@ const RegisterForm = ({ setStep }) => {
     });
   };
 
+  //registrationSchema.validate is used to validate the form values using the registrationSchema validation scheme.
+  //If there are validation errors, they are captured and updated in the formErrors state.
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      await registrationSchema.validate(formValues, { abortEarly: false }); //The { abortEarly: false } argument is passed
+      // so that Yup generates all validation errors
+      // instead of stopping after the first error encountered.
+      setFormErrors({});
+      setStep(2);
+    } catch (error) {
+      const errors = {};
+      error.inner.forEach((err) => {
+        errors[err.path] = err.message;
+      });
+      setFormErrors(errors);
+    }
+  };
+
   return (
     <>
       <form className={styles.registerForm}>
@@ -49,6 +69,7 @@ const RegisterForm = ({ setStep }) => {
           placeholder="PlaceHolder"
           variant="outlined"
           className={styles.input}
+          onChange={() => handleInputChange()}
         />
 
         <h4>Segundo nombre</h4>
@@ -57,6 +78,7 @@ const RegisterForm = ({ setStep }) => {
           placeholder="PlaceHolder"
           variant="outlined"
           className={styles.input}
+          onChange={() => handleInputChange()}
         />
 
         <h4>Correo electrónico</h4>
@@ -64,6 +86,7 @@ const RegisterForm = ({ setStep }) => {
           className={styles.input}
           placeholder="PlaceHolder"
           id="outlined-start-adornment"
+          onChange={() => handleInputChange()}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -78,6 +101,7 @@ const RegisterForm = ({ setStep }) => {
           className={styles.input}
           placeholder="+1 768 482 6489 4556"
           id="outlined-start-adornment"
+          onChange={() => handleInputChange()}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -93,12 +117,13 @@ const RegisterForm = ({ setStep }) => {
           id="outlined-basic"
           placeholder="PlaceHolder"
           variant="outlined"
+          onChange={() => handleInputChange()}
         />
 
         <Button
           variant="contained"
           className={styles.button}
-          onClick={() => setStep(2)}
+          onClick={() => handleSubmit()}
         >
           Continuar
         </Button>
