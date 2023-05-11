@@ -48,6 +48,7 @@ const RegisterForm = ({ setStep }) => {
       // instead of stopping after the first error encountered.
       setFormErrors({});
       setStep(2);
+      console.log("aqui");
     } catch (error) {
       const errors = {};
       error.inner.forEach((err) => {
@@ -122,7 +123,7 @@ const RegisterForm = ({ setStep }) => {
         <Button
           variant="contained"
           className={styles.button}
-          onClick={() => handleSubmit()}
+          onClick={(event) => handleSubmit(event)}
         >
           Continuar
         </Button>
