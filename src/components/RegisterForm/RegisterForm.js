@@ -44,8 +44,7 @@ const RegisterForm = ({ setStep }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await registrationSchema.validate(formValues, { abortEarly: false }); //The { abortEarly: false } argument is passed
-      // so that Yup generates all validation errors
+      await registrationSchema.validate(formValues, { abortEarly: false }); //The { abortEarly: false } argument is passed so that Yup generates all validation errors
       // instead of stopping after the first error encountered.
       setFormErrors({});
       setStep(2);
@@ -69,7 +68,7 @@ const RegisterForm = ({ setStep }) => {
           placeholder="PlaceHolder"
           variant="outlined"
           className={styles.input}
-          onChange={() => handleInputChange()}
+          onChange={(event) => handleInputChange(event, "firstName")}
         />
 
         <h4>Segundo nombre</h4>
@@ -78,7 +77,7 @@ const RegisterForm = ({ setStep }) => {
           placeholder="PlaceHolder"
           variant="outlined"
           className={styles.input}
-          onChange={() => handleInputChange()}
+          onChange={(event) => handleInputChange(event, "secondName")}
         />
 
         <h4>Correo electrónico</h4>
@@ -86,7 +85,7 @@ const RegisterForm = ({ setStep }) => {
           className={styles.input}
           placeholder="PlaceHolder"
           id="outlined-start-adornment"
-          onChange={() => handleInputChange()}
+          onChange={(event) => handleInputChange(event, "email")}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -101,7 +100,7 @@ const RegisterForm = ({ setStep }) => {
           className={styles.input}
           placeholder="+1 768 482 6489 4556"
           id="outlined-start-adornment"
-          onChange={() => handleInputChange()}
+          onChange={(event) => handleInputChange(event, "phoneNumber")}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -117,7 +116,7 @@ const RegisterForm = ({ setStep }) => {
           id="outlined-basic"
           placeholder="PlaceHolder"
           variant="outlined"
-          onChange={() => handleInputChange()}
+          onChange={(event) => handleInputChange(event, "agencyName")}
         />
 
         <Button
