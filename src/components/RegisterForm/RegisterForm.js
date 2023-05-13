@@ -48,11 +48,13 @@ const RegisterForm = ({ setStep }) => {
       // instead of stopping after the first error encountered.
       setFormErrors({});
       setStep(2);
-      console.log("aqui");
     } catch (error) {
+      // errors is an empty object to store the validation errors
       const errors = {};
+      //inner is a property of error object, is used for access to the internal errors of a validation
       error.inner.forEach((err) => {
-        errors[err.path] = err.message;
+        errors[err.path] = err.message; //err.path get the path of the field associated with the error
+        //err.message get the message error
       });
       setFormErrors(errors);
     }
@@ -69,7 +71,8 @@ const RegisterForm = ({ setStep }) => {
           placeholder="PlaceHolder"
           variant="outlined"
           className={styles.input}
-          onChange={(event) => handleInputChange(event, "firstName")}
+          name="firstName"
+          onChange={(event) => handleInputChange(event)}
         />
 
         <h4>Segundo nombre</h4>
@@ -78,7 +81,8 @@ const RegisterForm = ({ setStep }) => {
           placeholder="PlaceHolder"
           variant="outlined"
           className={styles.input}
-          onChange={(event) => handleInputChange(event, "secondName")}
+          name="secondName"
+          onChange={(event) => handleInputChange(event)}
         />
 
         <h4>Correo electrónico</h4>
@@ -86,7 +90,8 @@ const RegisterForm = ({ setStep }) => {
           className={styles.input}
           placeholder="PlaceHolder"
           id="outlined-start-adornment"
-          onChange={(event) => handleInputChange(event, "email")}
+          name="email"
+          onChange={(event) => handleInputChange(event)}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -101,7 +106,8 @@ const RegisterForm = ({ setStep }) => {
           className={styles.input}
           placeholder="+1 768 482 6489 4556"
           id="outlined-start-adornment"
-          onChange={(event) => handleInputChange(event, "phoneNumber")}
+          name="phoneNumber"
+          onChange={(event) => handleInputChange(event)}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -117,7 +123,8 @@ const RegisterForm = ({ setStep }) => {
           id="outlined-basic"
           placeholder="PlaceHolder"
           variant="outlined"
-          onChange={(event) => handleInputChange(event, "agencyName")}
+          name="agencyName"
+          onChange={(event) => handleInputChange(event)}
         />
 
         <Button
